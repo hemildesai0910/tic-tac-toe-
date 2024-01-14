@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #92C7CF;
+    text-align: center;
+
+}
+.hemil{
+    height: 70vh;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
+    font-size: 10vmin;
+    color: #503C3C;
+    background-color: #FDE9DF;
+    animation-name: example;
+     animation-duration: 10s;
+     animation: mymove 5s infinite;
+}
+@keyframes example {
+    /* from {background-color: #DCF2F1;}
+    to {background-color: #FFD1E3;} */
+    0%   {background-color:#E6A4B4; left:0px; top:0px;}
+    25%  {background-color:#CEDCC3; left:200px; top:0px;}
+    50%  {background-color:#A7B99E; left:200px; top:200px;}
+    75%  {background-color:#EFF7D3; left:0px; top:200px;}
+    100% {background-color:#F3ECC8; left:0px; top:0px;}
+  }
+  @keyframes mymove {
+    50% {border: 15px solid #E6A4B4;}
+  }
+#reset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #503C3C;
+    color: #FDFFAB;
+    border-radius: 1rem;
+    border: none;
+}
+#new{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #503C3C;
+    color: #FDFFAB;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    color: #503C3C;
+    font-size: 6vmin;
+}
+.msg-container{
+    height: 20vmin;
+}
+.hide{
+    display: none;
+}
